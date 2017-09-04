@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+h1 {
+    color: #103263;
+    font-size: 3.8em;
+}
+p {
+    font-family: Arial;
+    color: #fff;
+    line-height: 1.8em;
+}
+header {
+    background-color: #000;
+    background-image:  url('../img/layer.png');
+    width: 100%;
+}
+.header_top {
+    margin: 0 auto;
+    width: 960px;
+    display: table;
+    position: relative;
+}
+.right {
+    padding: 20px 0;
+    float: right;
+}
+.contact {
+    float: left;
+    margin-right: 20px;
+}
+.right a img {
+    float: left;
+}
+.product {
+    float: right;
+    padding-top: 15px;
+}
+.product span.prod  {
+    color: #0d80e5;
+}
+.contact li {
+    list-style: none;
+    float: left;
+}
+.contact a {
+    padding-right: 5px;
+    color: #fff;
+}
+span {
+    color: #fff;
+}
+.header_center {
+    margin: 0 auto;
+    width: 960px;
+}
+.search {
+    float: right;
+    padding-top: 20px;
+}
+.dropdown-content {
+    float: right;
+    padding-top: 25px;
+    margin-left: 10px;
+}
+.dropdown-content a {
+    color: #fff;
+    margin-left: 5px;
+}
+.logo {
+    margin-left: 130px;
+}
+form {
+    position: relative;
+    width: 150px;
+    margin: 0 auto;
+}
+input {
+    width: 100%;
+    height: 25px;
+    padding-left: 10px;
+    border: 2px solid #28374e;
+    border-radius: 2px;
+    outline: none;
+    background-color: #113054;
+    color: #fff;
+}
+button {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 30px;
+    height: 25px;
+    border: none;
+    background: #23589a;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+button:before {
+
+}
