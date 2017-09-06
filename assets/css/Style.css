@@ -8,11 +8,12 @@ a {
 h1 {
     font-family: Arial;
     color: #103263;
-    font-size: 3.8em;
+    font-size: 61px;
     font-weight: bold;
+    margin: 0;
 }
 #top {
-    background: url("../img/layer.png") no-repeat 50% 50%;
+    background: url("../img/layer1.png") no-repeat top center;
     background-size: cover;
     display: table;
     width: 100%;
@@ -20,22 +21,15 @@ h1 {
 .header_top{
     float: left;
     width: 100%;
-    padding: 10px 0;
 }
 .container{
     max-width: 960px;
     margin: 0 auto;
-    padding: 0;
+    padding: 15px;
 }
 .header_main{
-    background-image: url();
     float: left;
     width: 100%;
-}
-.container{
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0;
 }
 .product {
     float: right ;
@@ -43,11 +37,16 @@ h1 {
 }
 .product a {
     color: #0d80e5;
+    font-family: Arial;
+    font-size: 11px;
+
 }
 span {
     border-left: 1px solid #fff;
     padding-left: 5px;
     color: #fff;
+    font-family: Arial;
+    font-size: 11px;
 }
 .contact{
     float: right;
@@ -62,29 +61,54 @@ span {
 .contact a {
     margin-right: 20px;
     color: #fff;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+}
+.finger {
+    float: right;
+    right: 617px;
+    position: absolute;
+    top: 45px;
+    z-index: 2;
 }
 .trans {
-    background-color: #1e5799;
+    margin: 0 0 5px 5px;
+    position: relative;
+    z-index: 0;
+}
+.trans a:before {
+    background-color: #26558b;
+@include filter-gradient(#26558b, #cedbe9, horizontal);
+@include background-image(linear-gradient(left top, #26558b 0%,
+#3a8bc2 34%,#419ad6 44%,#419ad6 48%,#419ad6 49%,#419ad6 49%,#6199c7 50%,
+#419ad6 51%,#6199c7 51%,#419ad6 51%,#419ad6 60%,#419ad6 60%,#cedbe9 100%,
+#aac5de 100%,#6199c7 100%,#6199c7 101%,#cedbe9 102%));
+    content: "";
+    left: -15px;
+    top: -5px;
+    position: absolute;
     height: 30px;
     transform: skew(25deg);
-    width: 40px;
+    width: 60px;
+    z-index: -1;
 }
 .center_left {
     float: left;
     width: 50%;
 }
 .logo {
-    margin-top: -75px;
+    margin-top: -82px;
     margin-left: -110px;
 }
 .text {
     margin-top: -60px;
 }
 .text p {
-    font-family: Meriad Pro;
-    font-size: 18px;
+    font-family: Arial;
+    font-size: 15px;
     color: #fff;
-    line-height: 28px;
+    line-height: 30px;
 }
 .button {
     margin-top: 40px;
@@ -94,6 +118,9 @@ span {
     float: right;
     width: 50%;
 }
+.search_lang {
+    margin-top: 20px;
+}
 form {
     position: relative;
     width: 150px;
@@ -102,52 +129,66 @@ form {
 }
 input {
     width: 100%;
-    height: 20px;
+    height: 25px;
     padding-left: 10px;
     border: 2px solid #28374e;
     border-radius: 2px;
     outline: none;
     background-color: #113054;
-    color: #fff;
-    margin-top: 20px;
+    font-size: 11px;
+    font-family: Myriad Pro;
 }
 button {
     position: absolute;
     top: 0;
     right: 0px;
     width: 30px;
-    height: 20px;
+    height: 25px;
     border: none;
     background: #23589a;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
-    margin-top: 20px;
+}
+::-webkit-input-placeholder {
+    color: #fff;
 }
 .search {
-    margin-left: 260px;
+    margin-left: 240px;
 }
 .lang {
     float: right;
-    margin-top: 22px;
+}
+.lang_color:hover {
+    background-color: #26558b;
+@include filter-gradient(#26558b, #cedbe9, horizontal);
+@include background-image(linear-gradient(left top, #26558b 0%,
+#3a8bc2 34%,#419ad6 44%,#419ad6 48%,#419ad6 49%,#419ad6 49%,#6199c7 50%,
+#419ad6 51%,#6199c7 51%,#419ad6 51%,#419ad6 60%,#419ad6 60%,#cedbe9 100%,
+#aac5de 100%,#6199c7 100%,#6199c7 101%,#cedbe9 102%));
+    display: block;
+    text-decoration: none;
+    z-index: 1;
 }
 .lang a {
     border-left:1px solid #bbb;
-    padding:0 2px 0 4px;
+    padding: 5px 8px;
     color: #fff;
-    font-family: Myriad Pro;
-    font-size: 14px;
+    font-family: Vernada;
+    font-size: 11px;
+    float: left;
+    text-align: center;
 }
 .arrow_right {
     position: absolute;
-    margin-left: 530px;
-    margin-top: 120px;
+    top: 180px;
+    left: 78%;
 }
 .arrow_left {
     position: absolute;
-    margin-left: -140px;
-    margin-top: 120px;
+    top: 180px;
+    left: 19%;
 }
 .camera {
     float: right;
-    margin-top: 50px;
+    margin-top: 20px;
 }
