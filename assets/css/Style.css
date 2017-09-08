@@ -218,9 +218,11 @@ button.button_shape {
     position: absolute;
     top: 214px;
     left: 18%;
-
 }
 
+.arrow_left, .arrow_right {
+    cursor: pointer;
+}
 .camera {
     float: right;
     margin-top: 20px;
@@ -412,6 +414,7 @@ h3 {
 
 .small_img img {
     padding-right: 10px;
+    cursor: pointer;
 }
 
 .read a {
