@@ -94,12 +94,11 @@ span {
 }
 
 .trans a:before {
-    background-color: #26558b;
-@include filter-gradient(#26558b, #cedbe9, horizontal);
-@include background-image(linear-gradient(left top, #26558b 0 %,
-#3a8bc2 34 %, #419ad6 44 %, #419ad6 48 %, #419ad6 49 %, #419ad6 49 %, #6199c7 50 %,
-#419ad6 51 %, #6199c7 51 %, #419ad6 51 %, #419ad6 60 %, #419ad6 60 %, #cedbe9 100 %,
-#aac5de 100 %, #6199c7 100 %, #6199c7 101 %, #cedbe9 102 %));
+    background: rgb(30, 87, 153);
+    background: -moz-linear-gradient(-45deg, rgba(30, 87, 153, 1) 28%, rgba(125, 185, 232, 1) 82%);
+    background: -webkit-linear-gradient(-45deg, rgba(30, 87, 153, 1) 28%, rgba(125, 185, 232, 1) 82%);
+    background: linear-gradient(135deg, rgba(30, 87, 153, 1) 28%, rgba(125, 185, 232, 1) 82%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#7db9e8', GradientType=1);
     content: "";
     left: -15px;
     top: -5px;
@@ -160,8 +159,8 @@ input {
     border-radius: 2px;
     outline: none;
     background-color: #113054;
-    font-size: 11px;
-    font-family: Myriad Pro;
+    font-size: 10px;
+    font-family: Arialgit;
 }
 
 button.button_shape {
@@ -189,19 +188,18 @@ button.button_shape {
 }
 
 .lang_color:hover {
-    background-color: #26558b;
-@include filter-gradient(#26558b, #cedbe9, horizontal);
-@include background-image(linear-gradient(left top, #26558b 0 %,
-#3a8bc2 34 %, #419ad6 44 %, #419ad6 48 %, #419ad6 49 %, #419ad6 49 %, #6199c7 50 %,
-#419ad6 51 %, #6199c7 51 %, #419ad6 51 %, #419ad6 60 %, #419ad6 60 %, #cedbe9 100 %,
-#aac5de 100 %, #6199c7 100 %, #6199c7 101 %, #cedbe9 102 %));
+    background: rgb(30, 87, 153);
+    background: -moz-linear-gradient(-45deg, rgba(30, 87, 153, 1) 28%, rgba(125, 185, 232, 1) 82%);
+    background: -webkit-linear-gradient(-45deg, rgba(30, 87, 153, 1) 28%, rgba(125, 185, 232, 1) 82%);
+    background: linear-gradient(135deg, rgba(30, 87, 153, 1) 28%, rgba(125, 185, 232, 1) 82%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#7db9e8', GradientType=1);
     display: block;
     text-decoration: none;
     z-index: 1;
 }
 
 .lang a {
-    border-left: 1px solid #bbb;
+    border-left: 1px solid #4d535d;
     padding: 5px 8px;
     color: #fff;
     font-family: Vernada;
@@ -274,35 +272,35 @@ ul .tab-icon {
 ul .icon-home {
     position: absolute;
     left: 90px;
-    top: 40px;
+    top: 47px;
 
 }
 
 ul .icon-basic {
     position: absolute;
     left: 635px;
-    top: 40px;
-    z-index: 2;
+    top: 42px;
+    z-index: 1;
 }
 
 ul .icon-pro {
     position: absolute;
     left: -147px;
-    top: 40px;
+    top: 47px;
 
 }
 
 ul .icon-blog {
     position: absolute;
     left: 390px;
-    top: 40px;
+    top: 47px;
 
 }
 
 .icon-basic {
     color: #4fc6f0;
     font-family: Arial;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
 }
 
@@ -317,8 +315,9 @@ li.tab-icon:hover {
     background: url('../img/basic.png') no-repeat;
     color: #4fc6f0;
     font-family: Arial;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
+    top: 42px;
     z-index: 1;
 }
 
@@ -407,11 +406,11 @@ h3 {
 
 .small_img {
     text-align: center;
+    padding-bottom: 50px;
 }
 
 .small_img img {
     padding-right: 10px;
-    padding-bottom: 40px;
 }
 
 .read a {
@@ -456,7 +455,7 @@ button {
 }
 
 .features {
-    transform: translate(372px, 802px);
+    transform: translate(372px, 812px);
     position: absolute;
 
 }
