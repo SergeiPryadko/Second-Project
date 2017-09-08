@@ -30,7 +30,7 @@ h1 {
 .container {
     max-width: 960px;
     margin: 0 auto;
-    padding: 15px;
+    padding-top: 20px;
 }
 
 .header_main {
@@ -115,7 +115,7 @@ span {
 }
 
 .logo {
-    margin-top: -82px;
+    margin-top: -94px;
     margin-left: -110px;
 }
 
@@ -141,7 +141,7 @@ span {
 }
 
 .search_lang {
-    margin-top: 20px;
+    padding-top: 10px;
 }
 
 form {
@@ -210,14 +210,15 @@ button.button_shape {
 
 .arrow_right {
     position: absolute;
-    top: 180px;
+    top: 200px;
     left: 78%;
 }
 
 .arrow_left {
     position: absolute;
-    top: 180px;
-    left: 19%;
+    top: 214px;
+    left: 18%;
+
 }
 
 .camera {
