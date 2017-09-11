@@ -228,6 +228,7 @@ button.button_shape {
     margin-top: 20px;
 }
 
+
 /* Navigation */
 
 #menu_navigate {
@@ -245,6 +246,7 @@ button.button_shape {
 .wrapper ul {
     list-style: none;
     margin: 0;
+    cursor: pointer;
 }
 
 ul .tab-icon {
