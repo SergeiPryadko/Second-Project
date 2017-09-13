@@ -1,26 +1,27 @@
 var slideIndex =1;
-showslides = (slideIndex);
+showSlides = (slideIndex);
 
 function plusSlides (n) {
-    showslides = (slideIndex += n);
+    showSlides = (slideIndex += n);
 }
 function currentSlide (n) {
-    showslides = (slideIndex = n);
+    showSlides = (slideIndex = n);
 }
-(function showslide(n) {
+(function showSlide(n) {
     var i;
-    var slides = document.getElementsByClassName("camera");
+    var slide = document.getElementById('camera');
 
-    if (n >slides.length) {
+    if (n >slide.length) {
         slideIndex = 1;
     }
     if (n < 1) {
-        slideIndex = slides.length;
+        slideIndex = slide.length;
     }
-    for (i = 0; i < slides.length; i++) {
-        slides [i].style.display = ("none")
+    for (i = 0; i < slide.length; i++) {
+        slide [i].style.display = 'none';
     }
 
-    slides[slideIndex -1].style.display = ("block");
+    slide[slideIndex -1].style.display = 'block';
 })();
+
 

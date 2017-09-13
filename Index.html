@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Wheel Witness</title>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/js/script.js"></script>
 </head>
 <body>
@@ -63,9 +64,9 @@
                             <a href="#" class="lang_color">RU</a>
                         </div>
                     </div>
-                    <div class="camera">
+                    <div id="camera">
                         <img src="assets/img/img1.png" alt>
-                        <img src="assets/img/img2.png" alt>
+                        <!-- <img src="assets/img/img2.png" alt> -->
                     </div>
                 </div>
                 <div class="arrow_right">
@@ -78,17 +79,19 @@
 
 <!--  Navigation  -->
 
-<section>
+<section class="art_nav">
+    <div class="back_img">
     <nav id="menu_navigate">
         <div class="wrapper">
             <ul>
-                <li class="tab-icon icon-basic"><a href="" class="lang_color"></a>BASIC</li>
-                <li class="tab-icon icon-home"><a href="" class="link"></a>HOME</li>
-                <li class="tab-icon icon-blog"><a href="" class="link"></a>BLOG</li>
-                <li class="tab-icon icon-pro"><a href="" class="link"></a>PRO</li>
+                <li class="tab-icon"><a href="" class="link">HOME</a></li>
+                <li class="tab-icon tab-icon-mark"><a href="" class="lang_color">BASIC</a></li>
+                <li class="tab-icon"><a href="" class="link">BLOG</a></li>
+                <li class="tab-icon"><a href="" class="link">PRO</a></li>
             </ul>
         </div>
     </nav>
+    </div>
 </section>
 
 <!-- Main-Content -->

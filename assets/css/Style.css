@@ -182,6 +182,9 @@ button.button_shape {
 .search {
     margin-left: 240px;
 }
+button.batton_shape, img {
+    padding-top: 5px;
+}
 
 .lang {
     float: right;
@@ -223,7 +226,7 @@ button.button_shape {
 .arrow_left, .arrow_right {
     cursor: pointer;
 }
-.camera {
+#camera {
     float: right;
     margin-top: 20px;
 }
@@ -231,16 +234,29 @@ button.button_shape {
 
 /* Navigation */
 
-#menu_navigate {
+
+.back_img {
     background-color: #000828;
-    background-size: cover;
+    width: 100%;
+    height: 60px;
+    display: table;
+}
+
+.art_nav{
+    position: relative;
     float: left;
     width: 100%;
 }
+#menu_navigate {
+    position: absolute;
+    width: 100%;
+    top: 52px;
+}
 
 .wrapper {
-    width: 960%;
+    width: 960px;
     margin: 0 auto;
+    display: table;
 }
 
 .wrapper ul {
@@ -251,79 +267,36 @@ button.button_shape {
 
 ul .tab-icon {
     float: left;
-    padding: 20px 147px;
 }
-
-.tab-icon.icon-home {
+ul .tab-icon a {
+    padding: 20px 147px;
+    display: block;
+}
+.tab-icon a {
     background: url('../img/home.png') no-repeat;
     position: relative;
-}
-
-.tab-icon.icon-basic {
-    background: url('../img/basic.png') no-repeat;
-    position: relative;
-}
-
-.tab-icon.icon-pro {
-    background: url('../img/Pro.png') no-repeat;
-    position: relative;
-}
-
-.tab-icon.icon-blog {
-    background: url('../img/Blog.png') no-repeat;
-    position: relative;
-}
-
-ul .icon-home {
-    position: absolute;
-    left: 90px;
-    top: 47px;
-
-}
-
-ul .icon-basic {
-    position: absolute;
-    left: 635px;
-    top: 42px;
-    z-index: 1;
-}
-
-ul .icon-pro {
-    position: absolute;
-    left: -147px;
-    top: 47px;
-
-}
-
-ul .icon-blog {
-    position: absolute;
-    left: 390px;
-    top: 47px;
-
-}
-
-.icon-basic {
-    color: #4fc6f0;
-    font-family: Arial;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.icon-home, .icon-pro, .icon-blog {
     color: #666666;
     font-family: Arial;
     font-size: 14px;
+    margin-left: -104px;
     font-weight: 600;
 }
 
-li.tab-icon:hover {
+.tab-icon.tab-icon-mark a {
     background: url('../img/basic.png') no-repeat;
     color: #4fc6f0;
     font-family: Arial;
     font-size: 14px;
     font-weight: bold;
-    top: 42px;
+    position: relative;
     z-index: 1;
+}
+.tab-icon a:hover {
+    background: url('../img/basic.png') no-repeat;
+    color: #4fc6f0;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 /* Main-Content */
@@ -512,6 +485,7 @@ button {
     width: 960px;
     margin: 0 auto;
     padding-top: 50px;
+    display: table;
 }
 
 iframe {
