@@ -1,27 +1,14 @@
-var slideIndex =1;
-showSlides = (slideIndex);
+$(document).ready(function () {
+    $('.next').on('click'), function () {
 
-function plusSlides (n) {
-    showSlides = (slideIndex += n);
-}
-function currentSlide (n) {
-    showSlides = (slideIndex = n);
-}
-(function showSlide(n) {
-    var i;
-    var slide = document.getElementById('camera');
+        var currentImg = $('.active');
+        var nextImg = currentImg.next();
 
-    if (n >slide.length) {
-        slideIndex = 1;
+        if (nextImg.length) {
+            currentImg.removeClass('active').css('z-index', -10);
+            nextImg.addClass('active').css('z-index', 10);
+        }
     }
-    if (n < 1) {
-        slideIndex = slide.length;
-    }
-    for (i = 0; i < slide.length; i++) {
-        slide [i].style.display = 'none';
-    }
-
-    slide[slideIndex -1].style.display = 'block';
-})();
+});
 
 

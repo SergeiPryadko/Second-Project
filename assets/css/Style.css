@@ -28,9 +28,10 @@ h1 {
 }
 
 .container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding-top: 20px;
+  width: 960px;
+  margin: 0 auto;
+  padding-top: 20px;
+  display: table;
 }
 
 .header_main {
@@ -77,36 +78,36 @@ span {
     font-family: Arial;
     font-size: 12px;
     font-weight: bold;
+    padding: 10px 0;
 }
 
-.finger {
-    float: right;
-    right: 617px;
-    position: absolute;
-    top: 45px;
-    z-index: 2;
-}
-
-.trans {
+li {
     margin: 0 0 5px 5px;
     position: relative;
     z-index: 0;
 }
 
-.trans a:before {
+.contact li a:before {
     background: rgb(30, 87, 153);
     background: -moz-linear-gradient(-45deg, rgba(30, 87, 153, 1) 28%, rgba(125, 185, 232, 1) 82%);
     background: -webkit-linear-gradient(-45deg, rgba(30, 87, 153, 1) 28%, rgba(125, 185, 232, 1) 82%);
     background: linear-gradient(135deg, rgba(30, 87, 153, 1) 28%, rgba(125, 185, 232, 1) 82%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#7db9e8', GradientType=1);
     content: "";
-    left: -15px;
-    top: -5px;
     position: absolute;
-    height: 30px;
-    transform: skew(25deg);
-    width: 60px;
-    z-index: -1;
+      height: 100%;
+      transform: skew(25deg);
+      width: 0%;
+      z-index: -1;
+      left: -10px;
+      top: -5px;
+      padding: 7px 0px;
+    transition: width 0.2s;
+}
+
+.contact li a:hover::before {
+  width: 100%;
+    transition: width 0.2s;
 }
 
 .center_left {
@@ -142,6 +143,8 @@ span {
 
 .search_lang {
     padding-top: 10px;
+    display: table;
+    width: 100%;
 }
 
 form {
@@ -180,7 +183,7 @@ button.button_shape {
 }
 
 .search {
-    margin-left: 240px;
+   float: right;
 }
 button.batton_shape, img {
     padding-top: 5px;
@@ -188,6 +191,7 @@ button.batton_shape, img {
 
 .lang {
     float: right;
+    margin-left: 10px;
 }
 
 .lang_color:hover {
@@ -211,16 +215,23 @@ button.batton_shape, img {
     text-align: center;
 }
 
+.slider {
+  position: relative;
+  display: table;
+}
+
 .arrow_right {
-    position: absolute;
-    top: 200px;
-    left: 78%;
+  position: absolute;
+  top: 50%;
+  right: -100px;
+  transform: translateY(-50%);
 }
 
 .arrow_left {
-    position: absolute;
-    top: 214px;
-    left: 18%;
+  position: absolute;
+  top: 50%;
+  left: -100px;
+  transform: translateY(-50%);
 }
 
 .arrow_left, .arrow_right {
@@ -248,9 +259,7 @@ button.batton_shape, img {
     width: 100%;
 }
 #menu_navigate {
-    position: absolute;
-    width: 100%;
-    top: 52px;
+  width: 100%;
 }
 
 .wrapper {
@@ -266,12 +275,15 @@ button.batton_shape, img {
 }
 
 ul .tab-icon {
-    float: left;
+    float: right;
+    margin: 0;
+    margin-top: -4px;
 }
 ul .tab-icon a {
     padding: 20px 147px;
     display: block;
 }
+
 .tab-icon a {
     background: url('../img/home.png') no-repeat;
     position: relative;
@@ -280,23 +292,16 @@ ul .tab-icon a {
     font-size: 14px;
     margin-left: -104px;
     font-weight: 600;
+    z-index: 3;
 }
 
-.tab-icon.tab-icon-mark a {
-    background: url('../img/basic.png') no-repeat;
-    color: #4fc6f0;
-    font-family: Arial;
-    font-size: 14px;
-    font-weight: bold;
-    position: relative;
-    z-index: 1;
-}
 .tab-icon a:hover {
     background: url('../img/basic.png') no-repeat;
     color: #4fc6f0;
     font-family: Arial;
     font-size: 14px;
     font-weight: bold;
+    z-index: 4;
 }
 
 /* Main-Content */
@@ -312,6 +317,8 @@ ul .tab-icon a {
     width: 960px;
     margin: 0 auto;
     padding-top: 35px;
+    display: table;
+position: relative;
 }
 
 .center_rigth {
@@ -341,6 +348,7 @@ ul .tab-icon a {
 .specification, .text_buttom, .digits p {
     font-family: Verdana;
     font-size: 12px;
+    float: left;
 }
 
 .text_average {
@@ -423,6 +431,9 @@ h3 {
 
 button {
     border: 0;
+    background: 0;
+    outline: none;
+    cursor: pointer;
 }
 
 .text_content {
@@ -434,9 +445,10 @@ button {
 }
 
 .features {
-    transform: translate(372px, 812px);
-    position: absolute;
-
+  transform: translateX(-50%);
+position: absolute;
+left: 50%;
+bottom: -44px;
 }
 
 /*   Main_Buttom   */
@@ -449,7 +461,9 @@ button {
     -moz-box-shadow: 0 10px 6px -6px #e0e0e0;
     box-shadow: 0 10px 6px -3px #e0e0e0;
 }
-
+#main_buttom img {
+    float: left;
+}
 .row {
     float: left;
     width: 100%;
@@ -468,7 +482,7 @@ button {
 }
 
 .laptop p, .glob p, .folder p {
-    float: right;
+    float: left;
     font-family: Arial;
     font-size: 13px;
     line-height: 20px
@@ -521,7 +535,7 @@ iframe {
 }
 
 .chat {
-    float: right;
+    float: left;
     width: 33%;
 }
 
@@ -542,8 +556,3 @@ iframe {
 .chat a {
     padding-right: 10px;
 }
-
-
-
-
-
