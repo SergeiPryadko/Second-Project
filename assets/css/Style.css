@@ -81,7 +81,7 @@ span {
     padding: 10px 0;
 }
 
-li {
+#top li {
     margin: 0 0 5px 5px;
     position: relative;
     z-index: 0;
