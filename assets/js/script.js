@@ -1,14 +1,27 @@
-$(document).ready(function () {
-    $('.next').on('click'), function () {
 
-        var currentImg = $('.active');
-        var nextImg = currentImg.next();
+$(function () {
+    $('.arrow_right').on('click', function () {
+        var currentImage = $('.img.first');
+        var currentImageIndex = $('.img.first').index();
+        var nextImageIndex = currentImageIndex +1;
+        var nextImage = $('.img').eq(nextImageIndex);
+        currentImage.removeClass('first');
 
-        if (nextImg.length) {
-            currentImg.removeClass('active').css('z-index', -10);
-            nextImg.addClass('active').css('z-index', 10);
+        if (nextImageIndex === ($('.img:last').index()+1)) {
+           $('.img').eq(0).addClass('first');
+        }else {
+            nextImage.addClass('first');
         }
-    }
+    });
+
+    $('.arrow_left').on('click', function () {
+        var currentImage = $('.img.first');
+        var currentImageIndex = $('.img.first').index();
+        var prevImageIndex = currentImageIndex -1;
+        var prevImage = $('.img').eq(prevImageIndex);
+
+        currentImage.removeClass('first');
+        prevImage.addClass('first');
+
+    });
 });
-
-

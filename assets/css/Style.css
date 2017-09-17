@@ -240,6 +240,14 @@ button.batton_shape, img {
 #camera {
     float: right;
     margin-top: 20px;
+
+}
+.img.first {
+    display: block;
+}
+
+.img {
+    display: none;
 }
 
 
